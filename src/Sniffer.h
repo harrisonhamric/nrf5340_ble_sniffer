@@ -9,6 +9,7 @@
 #include "LedController.h"
 #include "Buttons.h"
 #include "Sniffer.h"
+#include "bleCentral.h"
 
 class Sniffer 
 {
@@ -16,7 +17,9 @@ public:
     Sniffer();
     void Run(void);
     LedController GetLeds();
+    bleCentral GetBle();
 private:
     LedController _LEDS;
     Buttons _buttons;
+    bleCentral _ble;
 };

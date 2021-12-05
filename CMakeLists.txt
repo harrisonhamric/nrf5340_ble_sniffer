@@ -14,10 +14,20 @@ project(NONE)
 
 # NORDIC SDK APP START
 target_sources(app PRIVATE
+  src/main.cpp
   src/Sniffer.cpp
-  src/HelperFunctions.cpp
-  src/LedController.cpp
-  src/Buttons.cpp
+  src/helpers/HelperFunctions.cpp
+  src/leds/LedController.cpp
+  src/buttons/Buttons.cpp
+  src/ble/bleCentral.cpp
+)
+
+target_include_directories(app PRIVATE
+  src
+  src/ble
+  src/buttons
+  src/helpers
+  src/leds
 )
 
 # Preinitialization related to Thingy:53 DFU
