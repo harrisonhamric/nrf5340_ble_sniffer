@@ -1,4 +1,4 @@
-Bluetooth: Peripheral LBS
+Bluetooth: BLE Sniffer
 #########################
 
 Overview
